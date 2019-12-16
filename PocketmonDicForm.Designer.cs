@@ -309,7 +309,7 @@
             this.btnExportExcel.Name = "btnExportExcel";
             this.btnExportExcel.Size = new System.Drawing.Size(199, 23);
             this.btnExportExcel.TabIndex = 10;
-            this.btnExportExcel.Text = "포켓몬(1세대) 액셀로 출력하기";
+            this.btnExportExcel.Text = "현재 그리드뷰 액셀로 출력하기";
             this.btnExportExcel.UseVisualStyleBackColor = true;
             this.btnExportExcel.Click += new System.EventHandler(this.btnExportExcel_Click);
             // 
@@ -319,7 +319,7 @@
             this.btnExportTxt.Name = "btnExportTxt";
             this.btnExportTxt.Size = new System.Drawing.Size(199, 23);
             this.btnExportTxt.TabIndex = 10;
-            this.btnExportTxt.Text = "포켓몬(1세대) TXT로 출력하기";
+            this.btnExportTxt.Text = "현재 그리드뷰 TXT로 출력하기";
             this.btnExportTxt.UseVisualStyleBackColor = true;
             this.btnExportTxt.Click += new System.EventHandler(this.btnExportTxt_Click);
             // 
