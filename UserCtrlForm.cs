@@ -47,7 +47,7 @@ namespace PokemonWinform
 
         private void btnUselect_Click(object sender, EventArgs e)
         {
-            string sql = $"select * from user where name = @name";
+            string sql = "select * from user where name=@name";
 
             dataAdapter.SelectCommand = new MySqlCommand(sql, conn);
             dataAdapter.SelectCommand.Parameters.AddWithValue("@name", tbxUSname.Text.ToString());
@@ -55,10 +55,9 @@ namespace PokemonWinform
             try
             {
                 conn.Open();
-                if (dataAdapter.SelectCommand.ExecuteNonQuery() > 0) // 검색된 데이터의 행 수 반환
+                dataSet.Clear();
+                if (dataAdapter.Fill(dataSet, "user") > 0) // 검색된 데이터의 행 수 반환
                 {
-                    dataSet.Clear();
-                    dataAdapter.Fill(dataSet, "user");
                     dataGridView1.DataSource = dataSet.Tables["user"];
                 }
                 else
