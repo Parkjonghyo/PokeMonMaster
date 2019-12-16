@@ -51,6 +51,8 @@
             this.btnSkillSelect = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnExportExcel = new System.Windows.Forms.Button();
+            this.btnExportTxt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudUp)).BeginInit();
@@ -301,11 +303,33 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "이고";
             // 
+            // btnExportExcel
+            // 
+            this.btnExportExcel.Location = new System.Drawing.Point(373, 12);
+            this.btnExportExcel.Name = "btnExportExcel";
+            this.btnExportExcel.Size = new System.Drawing.Size(199, 23);
+            this.btnExportExcel.TabIndex = 10;
+            this.btnExportExcel.Text = "포켓몬(1세대) 액셀로 출력하기";
+            this.btnExportExcel.UseVisualStyleBackColor = true;
+            this.btnExportExcel.Click += new System.EventHandler(this.btnExportExcel_Click);
+            // 
+            // btnExportTxt
+            // 
+            this.btnExportTxt.Location = new System.Drawing.Point(373, 41);
+            this.btnExportTxt.Name = "btnExportTxt";
+            this.btnExportTxt.Size = new System.Drawing.Size(199, 23);
+            this.btnExportTxt.TabIndex = 10;
+            this.btnExportTxt.Text = "포켓몬(1세대) TXT로 출력하기";
+            this.btnExportTxt.UseVisualStyleBackColor = true;
+            this.btnExportTxt.Click += new System.EventHandler(this.btnExportTxt_Click);
+            // 
             // PocketmonDicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExportTxt);
+            this.Controls.Add(this.btnExportExcel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tbxSearchId);
             this.Controls.Add(this.label2);
@@ -353,5 +377,7 @@
         private System.Windows.Forms.Button btnSkillSelect;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnExportExcel;
+        private System.Windows.Forms.Button btnExportTxt;
     }
 }
